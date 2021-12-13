@@ -1,0 +1,65 @@
+CREATE DATABASE TiendaPadel
+
+CREATE TABLE producto ( id INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL, descripcion VARCHAR(200) NOT NULL, categoria VARCHAR(50) NOT NULL, imagen VARCHAR(200) NOT NULL, precio INT(6) NOT NULL );
+
+INSERT INTO producto (descripcion, categoria, imagen, precio) VALUES 
+( "Head Pala Padel Evo Sanyo", "Palas", "/images/head-pala-padel-evo-sanyo.jpg", 29000)
+( "Head Pala Padel Flash", "Palas", "/images/head-pala-padel-flash.jpg", 10000)
+( "Head Pala Padel Flash Rosa", "Palas", "/images/head-pala-padel-flash-2.jpg", 8000)
+( "Head Pala Padel Graphene 360 Delta Hybrid", "Palas", "/images/head-pala-padel-graphene-360-delta-hybrid.jpg", 45000)
+( "Head Pala Padel Graphene 360 Delta Motion", "Palas", "/images/head-pala-padel-graphene-360-delta-motion.jpg", 40000)
+( "Remera Chomba Padel Vairo Polo Grapheno Speed Profesional", "Remeras", "/images/Vairo.webp", 3500)
+("Remera Sublimada World Padel Tour Alejandro Galan 2021", "Remeras", "/images/Cupra.webp", 3800)
+
+("Zapatillas Tenis K Tour Hombre Wilson Padel All" , "Zapas", "/images/ZapaWilson.webp" , 20000)
+("Zapatillas Yonex Lumio 2 Tenis Padel Hombre" , "Zapas" , "/images/ZapaYonex.webp" , 22000)
+("Zapatillas Tenis K Energy Mujer Wilson Padel All Court" , "Zapas", "/images/ZapaWilsonMujer.webp" , 21000)
+("Zapatilla Topper Tie Break Adulto Tenis Blanco" , "Zapas", "/images/ZapaTopper.webp" , 6300)
+("Zapatillas Padel Babolat Jet Men Tenis Hombre Paddle" , "Zapas", "/images/ZapaBabolat.webp" , 36000)
+
+
+CREATE TABLE ranking ( id INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL, posicion int(3) NOT NULL, nombre varchar (100) NOT NULL, nacionalidad varchar(50) NOT NULL, puntos int(5) NOT NULL DEFAULT (0) , genero varchar (1));
+
+
+INSERT INTO ranking (posicion, nombre, nacionalidad, puntos, genero)
+values
+(1 , 'Alejandro Galán' , 'España' , 12535 , 'M') ,
+(2 , 'Juan Lebrón' , 'España' , 12535 , 'M') ,
+(3 , 'Martín Di Nenno' , 'Argentina' , 11910 , 'M') ,
+(4 , 'Franco Navarro' , 'España' , 11675 , 'M') ,
+(5 , 'Agustín Tapia' , 'Argentina' , 9290 , 'M') ,
+(6 , 'Daniel Gutiérrez' , 'Argentina' , 8700 , 'M') ,
+(7 , 'Fernando Belasteguín' , 'Argentina' , 7740 , 'M') ,
+(8 , 'Franco Stupaczuk' , 'Argentina' , 7515 , 'M') ,
+(9 , 'Alejandro Ruiz' , 'España' , 7085 , 'M') ,
+(10 , 'Federico Chingotto' , 'Argentina' , 6515 , 'M') ,
+(11 , 'Juan Tello' , 'Argentina' , 6515 , 'M') ,
+(12 , 'Pablo Lima' , 'Brasil' , 6125 , 'M') ,
+(13 , 'Maximiliano Sánchez' , 'Argentina' , 5035 , 'M') ,
+(14 , 'Luciano Capra' , 'Argentina' , 4756 , 'M') ,
+(15 , 'Javier Rico' , 'España' , 3673 , 'M') ,
+(16 , 'Arturo Coello' , 'España' , 3491 , 'M') ,
+(17 , 'Jerónimo González' , 'España' , 3438 , 'M') ,
+(18 , 'Miguel Lamperti' , 'Argentina' , 2960 , 'M') ,
+(19 , 'Miguel Yanguas' , 'España' , 2659 , 'M') ,
+(20 , 'Javier Ruiz' , 'España' , 2645 , 'M') ,
+(1 , 'Gemma Triai' , 'España' , 13820 , 'F') ,
+(2 , 'Alejandra Salazar' , 'España' , 13300 , 'F') ,
+(3 , 'Ariana Sánchez' , 'España' , 11065 , 'F') ,
+(4 , 'Paula Martín' , 'España' , 10520 , 'F') ,
+(5 , 'Tamara Icardo' , 'España' , 7294 , 'F') ,
+(6 , 'Delfina Brea' , 'Argentina' , 7270 , 'F') ,
+(7 , 'Lucía Sainz' , 'España' , 7145 , 'F') ,
+(8 , 'Patricia Llaguno' , 'España' , 6955 , 'F') ,
+(9 , 'Maria Virginia Riera' , 'Argentina' , 6770 , 'F') ,
+(10 , 'Beatriz González' , 'España' , 5735 , 'F') ,
+(11 , 'Marta Marrero' , 'España' , 5530 , 'F') ,
+(12 , 'Marta Ortega' , 'España' , 5185 , 'F') ,
+(13 , 'Aranzazu Osoro' , 'Argentina' , 5115 , 'F') ,
+(14 , 'Victoria Iglesias' , 'España' , 4885 , 'F') ,
+(15 , 'María Jose Sánchez' , 'España' , 3200 , 'F') ,
+(16 , 'María Pilar Sánchez' , 'España' , 3030 , 'F') ,
+(17 , 'Elisabet Amatriaín' , 'España' , 2648 , 'F') ,
+(18 , 'Carolina Navarro' , 'España' , 2371 , 'F') ,
+(19 , 'Jessica Castello' , 'España' , 2176 , 'F') ,
+(20 , 'Alix Collombon' , 'Francia' , 2113 , 'F') 

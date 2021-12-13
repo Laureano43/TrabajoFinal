@@ -1,0 +1,14 @@
+<% data.forEach((prod)=>{%>
+    <div class="card" style="width: 18rem;">
+        <div class="imagencontenedora">
+            <img src="<%=prod.imagen%>" class="card-img-top imagen" alt="...">
+        </div>
+        <div class="card-body">
+            <!--<h5 class="card-title">Card title</h5>-->
+         
+            <p class="card-text"><%=prod.descripcion%></p>
+            <p class="card-text precio"><%=prod.precio%></p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+<%})%>

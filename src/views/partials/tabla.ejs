@@ -1,0 +1,20 @@
+<table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Posición</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Nacionalidad</th>
+        <th scope="col">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach((jugador)=>{%>
+      <tr>
+        <th scope="row"><%=jugador.posicion%></th>
+        <td><%=jugador.nombre%></td>
+        <td><%=jugador.nacionalidad%></td>
+        <td><%=jugador.puntos%></td>
+      </tr>
+      <%})%>
+    </tbody>
+  </table>

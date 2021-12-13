@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <%-include('../partials/head')%>
+</head>
+<body>
+      <%-include('../partials/nav')%>
+      <%-include('../partials/header')%>
+    <main>
+        <br><hr><br>
+
+        <div class="recuadro">
+              <% if(genero == 'F') {%>
+                    <p class="titulo">Ranking Femenino</p>
+              <%}else{%>
+                    <p class="titulo">Ranking Masculino </p>
+              <%}%>
+        </div>
+
+        <div class="tablaRanking" id="linkRanking">
+          <div class="tablaRank">
+              <%-include('../partials/tabla')%>
+          </div>
+        </div>
+    </main>
+</body>
+<%-include('../partials/footer')%>
+</html>
